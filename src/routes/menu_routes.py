@@ -8,7 +8,13 @@ menu_bp = Blueprint('menu', __name__)
 @jwt_required()
 def get_menu():
     menu_items = [
-        {"id": 1, "label": "Hộ gia đình", "icon": "home-outline", "color": "yellow"},
-        {"id": 2, "label": "Tổ chức", "icon": "business-outline", "color": "blue"},
+        {"id": 1, "label": "Hộ gia đình", "icon": "home-outline", "color": "yellow","href":''},
+        {"id": 2, "label": "Tổ chức", "icon": "business-outline", "color": "blue", "href":''},
+        {"id": 3, "label": "Tổ chức", "icon": "business-outline", "color": "blue", "href": ''},
+        {"id": 4, "label": "Tổ chức", "icon": "business-outline", "color": "blue", "href": ''},
+        {"id": 5, "label": "Tổ chức", "icon": "business-outline", "color": "blue", "href": ''},
+        {"id": 6, "label": "Tổ chức", "icon": "business-outline", "color": "blue", "href": ''},
+        {"id": 7, "label": "Tổ chức", "icon": "business-outline", "color": "blue", "href": ''},
+        {"id": 8, "label": "Tổ chức", "icon": "business-outline", "color": "blue", "href": ''},
     ]
     return jsonify(menu_items)
