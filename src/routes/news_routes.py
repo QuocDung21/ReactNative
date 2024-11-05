@@ -32,3 +32,6 @@ def add_tintuc():
     db.session.add(new_news)
     db.session.commit()
     return jsonify(new_news.to_dict()), 201
+
+
+# 
